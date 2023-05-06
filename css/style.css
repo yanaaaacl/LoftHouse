@@ -1,0 +1,660 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap');
+
+@font-face {
+    font-family: "Post No Bills Jaffna";
+    src: local("Post No Bills Jaffna SemiBold"),
+      local("Post No Bills Jaffna-SemiBold"),
+      url("../fonts/PostNoBillsJaffna-SemiBold.woff2") format("woff2"),
+      url("../fonts/PostNoBillsJaffna-SemiBold.woff") format("woff"),
+      url("../fonts/PostNoBillsJaffna-SemiBold.eot") format("eot");
+    font-weight: 600;
+    font-style: normal;
+  }
+
+/* font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: "Post No Bills Jaffna", sans-serif; */
+
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+
+}
+
+.container{
+    max-width: 1130px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+/*HEADER*/
+
+/*HEADER-INNER*/
+
+.header{
+    background-image: url(../img/background-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    /* height: 100vh; */
+    
+}
+
+.header__inner{
+    padding-top: 30px;
+}
+
+.logo{
+    font-family: "Post No Bills Jaffna";
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 53px;
+}
+
+.header__inner-logo-text{
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.header__inner-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__inner-list{
+    display: flex;
+    gap: 40px;
+}
+
+.header__inner-item-link{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+/*HEADER-TOP*/
+
+.header__top{
+    text-align: center;
+    padding-top: 150px;
+   
+
+}
+
+.header__top-title{
+    max-width: 556px;
+    margin: 0 auto;
+    padding-bottom: 81px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 63px;
+    color: #d4c17f;
+
+
+}
+
+.header__top-mouse{
+    padding-bottom: 200px;
+
+}
+
+.header__top-mouse-link{
+
+}
+
+.header__top-info{
+    padding-bottom: 74px;
+    display: flex;
+    justify-content: center;
+    gap: 133px;
+
+}
+
+.header__top-place{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+    position: relative;
+
+}
+
+.header__top-place::before{
+    position: absolute;
+    content: url(../img/place.svg);
+    top: 0;
+    left: -30px;
+
+}
+
+.header__top-tel{
+
+}
+
+.header__top-link-tel{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+    position: relative;
+
+}
+
+.header__top-link-tel::before{
+    position: absolute;
+    content: url(../img/phone-call.svg);
+    top: 0;
+    right: 153px;
+
+}
+
+/*MAIN*/
+
+.main{
+    flex-grow: 1;
+}
+
+/*SECTION-aboutDistrict*/
+
+.aboutDistrict{
+    background-color: #242B33;
+    position: relative;
+
+}
+
+.aboutDistrict::after{
+    position: absolute;
+    content: "II";
+    max-width: 301px;
+    max-height: 533px;
+    opacity: 0.02;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 400px;
+    line-height: 533px;
+    top: -20px;
+    right: 30px;
+
+}
+
+.aboutDistrict__list{
+    display: flex;
+    gap: 70px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+}
+
+.aboutDistrict__item{
+    max-width: 194px;
+}
+
+.aboutDistrict__img{
+    margin-bottom: 53px;
+
+}
+
+.aboutDistrict__text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+   
+
+}
+
+/*SECTION-ourApartments*/
+
+.ourApartments{
+    background-color: #242B33;
+    position: relative;
+
+}
+
+.ourApartments::before{
+    position: absolute;
+    content: "III";
+    max-width: 452px;
+    max-height: 507px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 400px;
+    line-height: 533px;
+    color: #fff;
+    opacity: 0.02;
+    top: -70px;
+    left: -40px;
+
+
+}
+
+.ourApartments__title{
+    margin-bottom: 88px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 47px;
+    color: #d4c17f;
+
+
+}
+
+.ourApartments__content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    
+
+}
+
+.ourApartments__content-card{
+    max-width: 540px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+   
+
+}
+
+.ourApartments__card-text{
+    padding-top: 248px;
+    padding-bottom: 44px;
+    padding-left: 50px;
+    font-size: 24px;
+    line-height: 28px;
+
+}
+
+/*SECTION-WANTTOWATCH*/
+
+.wantToWatch{
+    padding: 180px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wantToWatch-title{
+    margin-bottom: 17px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 47px;
+    color: #d4c17f;
+
+
+}
+
+.wantToWatch__content{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    
+
+}
+
+.wantToWatch__content-text{
+    max-width: 540px;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+.wantToWatch__content-aboutText{
+
+}
+
+.wantToWatch__content-contact{
+    
+    
+
+}
+
+.wantToWatch__form{
+    margin-bottom: 35px;
+    display: flex;
+   
+   
+
+}
+
+.form__input{
+    text-align: center;
+    padding: 12px 12px;
+    width: 255px;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    color: #BEBEBE;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+    background-color: rgba(255,255,255, 0.2);
+    opacity: 0.2;
+    border: 1px solid rgba(255,255,255, 0.2);
+  
+}
+
+.form__input + .form__input{
+    margin-left: 30px;
+
+}
+
+.wantToWatch__btn{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    
+
+}
+
+.wantToWatch__btn-text{
+    width: 255px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #e7e7e7;
+    text-align: center;
+
+}
+
+.wantToWatch__btn-link{
+
+}
+
+.wantToWatch__link{
+    color: #fff;
+    background-color: #d4c17f;
+    border: 1px solid #d4c17f;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+    padding: 12px 12px;
+    display: block;
+    width: 255px;
+
+
+}
+
+/*SECTION-VIDEO*/
+
+.video{
+    background-color: #242B33;
+    text-align: center;
+    padding-bottom: 180px;
+    position: relative;
+
+}
+
+.video::after{
+    position: absolute;
+    content: "IV";
+    max-width: 452px;
+    max-height: 507px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 400px;
+    line-height: 533px;
+    color: #fff;
+    opacity: 0.02;
+    top: 50px;
+    right: 50px;
+    
+}
+
+.video__frame{
+    
+    
+}
+
+/*SECTION-MAP*/
+
+.map{
+    background-color: #242B33;
+    padding-bottom: 180px;
+
+}
+
+.map__title{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 47px;
+    color: #d4c17f;
+    margin-bottom: 88px;
+
+}
+
+/*SECTION-haveQuestion*/
+
+.haveQuestion{
+    background-color: #242B33;
+    padding-bottom: 180px;
+
+}
+
+.haveQuestion__title{
+    margin-bottom: 38px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 47px;
+    color: #d4c17f;
+
+}
+
+.haveQuestion__contacts{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+
+}
+
+.haveQuestion__contacts-text{
+    width: 255px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #e7e7e7;
+    text-align: center;
+    
+
+}
+
+.haveQuestion__form{
+    display: flex;
+
+}
+
+.haveQuestion__form-input{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    color: #BEBEBE;
+    background-color: rgba(255,255,255, 0.2);
+    opacity: 0.2;
+    border: 1px solid rgba(255,255,255, 0.2);
+    text-align: center;
+    padding: 12px 12px;
+    display: inline-block;
+    width: 255px;
+
+
+
+}
+
+.haveQuestion__form-input + .haveQuestion__form-input{
+    margin-left: 35px;
+}
+
+.haveQuestion__btn{
+
+}
+
+.haveQuestion__btn-link{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+    color: #fff;
+    background-color: #d4c17f;
+    border: 1px solid #d4c17f;
+    padding: 12px 12px;
+    display: inline-block;
+    width: 255px;
+
+}
+
+/*FOOTER*/
+
+.footer{
+    background-color: #242B33;
+
+}
+
+.footer__nav{
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 51px;
+    
+    align-items: baseline;
+    
+}
+
+.footer__nav-logo{
+    margin-right: 151px;
+
+}
+
+.footer__nav-logo-link{
+    font-family: "Post No Bills Jaffna";
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 53px;
+    color: #fff;
+    margin-bottom: 15px;
+
+}
+
+.footer__nav-logo-link-text{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.12em;
+    color: #fff;
+    text-transform: uppercase;
+
+
+}
+
+.footer__nav-list-one{
+margin-right: 166px;
+}
+
+.footer__nav-item-one{
+
+}
+
+.footer__nav-item-one + .footer__nav-item-one{
+    margin-top: 15px;
+
+}
+
+.footer__nav-link-one{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    letter-spacing: 0.05em;
+
+}
+
+.footer__nav-list-two{
+
+
+}
+
+.footer__nav-list-two + .footer__nav-list-two{
+    padding-left: 57px;
+
+}
+
+.footer__nav-item-two + .footer__nav-item-two{
+    padding-top: 15px;
+}
+
+.footer-color{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    color: #D4C17F;
+}
+
+.footer__nav-link-two{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    letter-spacing: 0.05em;
+
+}
+
+.footer__nav-link-svg + .footer__nav-link-svg{
+    padding-left: 21px;
+
+}
+
+
+
